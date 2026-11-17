@@ -1,0 +1,63 @@
+{
+  "name": "dsh-gallery",
+  "version": "0.1.0",
+  "description": "DeepSeek Harness 图片收藏插件：本地文件/网图/对话附件一键收藏，按关键词或分类找图，直接在对话里发图。Image gallery for DeepSeek Harness: save images and send them back as markdown.",
+  "type": "module",
+  "main": "index.js",
+  "files": [
+    "client.js",
+    "config.js",
+    "cordis.patch.yml",
+    "index.js",
+    "market.js",
+    "net.js",
+    "store.js",
+    "INTERFACE.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-connection",
+        "@deepseek-ai/dsh-client-ui-settings"
+      ],
+      "platform": "web"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-tools": ">=0.0.1-rc.1 <0.1.0 || >=0.1.0-rc.1 <0.2.0-0 || >=0.2.0-rc.1 <0.3.0-0"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "gallery",
+    "image",
+    "favorite",
+    "image-gallery"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cv588888888888888888888ju/dsh-gallery.git"
+  },
+  "homepage": "https://github.com/cv588888888888888888888ju/dsh-gallery#readme",
+  "bugs": {
+    "url": "https://github.com/cv588888888888888888888ju/dsh-gallery/issues"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  }
+}

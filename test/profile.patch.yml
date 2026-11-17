@@ -1,0 +1,6 @@
+# 隔离验收用叠加层：只在 --patch 里插本插件，不写进任何 profile。
+# 用法见 dsh-operations §8.5.1（口② profile 级 insert）。
+# 把 <abs-path-to-this-repo> 换成你 clone 下来的绝对路径。
+- insert:
+    - id: dsh-gallery
+      name: file:///<abs-path-to-this-repo>/index.js

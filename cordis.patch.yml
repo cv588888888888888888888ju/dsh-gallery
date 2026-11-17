@@ -1,0 +1,6 @@
+# dsh-gallery bundle patch：挂载 host 半边（工具 + 图片路由 + 管理 API）与 client 半边（设置页面板 + 选图器）。
+# 装载口与归一流程见 skill `dsh-operations` §8.5；键名/路由语义见 INTERFACE.md §1/§6。
+# name 必须是实际包名（cordis 按 name import 包）；纯 insert 可热挂载免重启。
+- insert:
+    - id: dsh-gallery
+      name: dsh-gallery
