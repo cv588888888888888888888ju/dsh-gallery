@@ -1,0 +1,15 @@
+dsh-gallery
+
+This project is a generalized fork of dsh-meme
+(https://github.com/yyh-001/dsh-meme, MIT, Copyright (c) 2026 Selfloom contributors).
+
+Inherited from upstream: the album store on node:sqlite, the whitelisted image
+route, the management API, the client settings panel and input-box picker, and the
+pack import/export plus market skeleton.
+
+Changed in this repo: meme semantics removed (mood buckets, sticker prompts, the
+sticker catalog semantics); images are sent as native markdown instead of DOM
+decoration; per-album enable switches, SHA-256 verified pack installs, legacy
+memes/ layout conversion, and optional proxy egress added.
+
+This repo is not affiliated with, or endorsed by, the upstream authors.
