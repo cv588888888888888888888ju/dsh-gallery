@@ -1,3 +1,4 @@
+// Derived from yyh-001/dsh-meme (MIT, Copyright (c) 2026 Selfloom contributors); see NOTICE and LICENSE.
 /**
  * dsh-gallery — 通用「收藏图片 / 发送图片」插件（host 半边）。
  * 语义（接口 / 键名 / 行为）见 INTERFACE.md；本文件的注释只写指针。

@@ -1,3 +1,4 @@
+// Derived from yyh-001/dsh-meme (MIT, Copyright (c) 2026 Selfloom contributors); see NOTICE and LICENSE.
 /**
  * dsh-gallery — 设置页「图片收藏」面板(Client 半边)。
  *
