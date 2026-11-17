@@ -1,6 +1,11 @@
 MIT License
 
-Copyright (c) 2026 chenty
+Copyright (c) 2026 chenty (dsh-gallery: changes and additions)
+Copyright (c) 2026 Selfloom contributors (dsh-meme: the upstream this plugin derives from)
+
+dsh-gallery is a generalized fork of dsh-meme (https://github.com/yyh-001/dsh-meme).
+Substantial portions of the album store, image routes, management API, client
+settings panel, picker, and pack import/export are derived from that project.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

@@ -2,7 +2,7 @@
 
 DeepSeek Harness 的**通用图片收藏 / 发图**插件：本地文件、网图 URL、对话里的图都能一键收进收藏夹；之后按关键词或分类找出来，直接发在对话里。
 
-从 [`yyh-001/dsh-meme`](https://github.com/yyh-001/dsh-meme)（表情包插件，MIT）改造而来：保留了它「图库 + SQLite 索引 + 白名单取图路由 + 管理面板 + 输入框选图器」的骨架，去掉了表情包语义（六情绪桶、斗图提示词注入、图库市场/在线目录订阅），并把发图方式换成**原生 markdown 图片**（不需要客户端做 DOM 装饰）。
+本插件是 [`yyh-001/dsh-meme`](https://github.com/yyh-001/dsh-meme)（表情包插件，MIT，Copyright © 2026 Selfloom contributors）的通用化改造，不是从零写的；沿用与改动逐条列在文末的「来源与许可」。
 
 ## 装
 
@@ -64,3 +64,16 @@ node --test test/*.test.mjs     # 47 项：存储层 / 市场纯逻辑与出网 
 ```
 
 `test/host.test.mjs` 用假 cordis ctx 直接调 `apply()`，真跑两个工具与两条 HTTP 路由，不依赖活的 DSH 进程。
+
+## 来源与许可
+
+本仓库是 MIT 协议下对 [`yyh-001/dsh-meme`](https://github.com/yyh-001/dsh-meme) 的改造，上游版权归 **Selfloom contributors**。
+
+| | 内容 |
+|---|---|
+| 沿用上游 | 图库目录 + `node:sqlite` 索引、白名单取图路由 `/dsh-gallery/<album>/<path>`、管理 API、客户端设置面板与输入框选图器、图包导入导出与市场骨架 |
+| 本仓库改掉 | 去掉表情包语义（六情绪桶、斗图提示词注入、图库市场/在线目录订阅）；发图改为**原生 markdown 图片**，不需要客户端做 DOM 装饰；新增专辑开关、图包市场 SHA-256 校验、旧 `memes/` 布局自动转换、可选代理出网 |
+| 许可 | MIT。`LICENSE` 同时保留上游与本仓库的版权声明；上游原始代码以该仓库为准 |
+
+本仓库与上游作者无关，也未经其背书。
+

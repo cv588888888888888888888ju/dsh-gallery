@@ -45,7 +45,11 @@
     "favorite",
     "image-gallery"
   ],
+  "author": "chenty",
   "license": "MIT",
+  "contributors": [
+    "Selfloom contributors (dsh-meme, upstream: https://github.com/yyh-001/dsh-meme)"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cv588888888888888888888ju/dsh-gallery.git"
